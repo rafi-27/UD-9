@@ -8,7 +8,7 @@ public class moto extends vehiculo{
 
     @Override
     public String toString() {
-        return super.toString()+"moto [carenada=" + carenada + "]";
+        return super.toString()+" moto carenada=" + carenada + "]";
     }
     
     

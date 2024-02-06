@@ -11,6 +11,6 @@ public class vehiculo {
 
     @Override
     public String toString() {
-        return "vehiculo [matricula=" + matricula + ", numeroRuedas=" + numeroRuedas + ", Color=" +elijeColor +"]";
+        return "vehiculo [matricula=" + matricula + ", numeroRuedas=" + numeroRuedas + ", Color=" +elijeColor;
     }
 }

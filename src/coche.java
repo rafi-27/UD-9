@@ -9,6 +9,6 @@ public class coche extends vehiculo{
 
     @Override
     public String toString() {
-        return super.toString()+"coche [pesoKg=" + pesoKg + "]";
+        return super.toString()+" coche pesoKg=" + pesoKg + "kg]";
     }
 }
