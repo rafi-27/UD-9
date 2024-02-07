@@ -1,3 +1,4 @@
+package ejercicios;
 public class coche extends vehiculo{
     private double pesoKg;
     private final static int ruedas = 4;

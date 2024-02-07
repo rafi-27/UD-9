@@ -1,3 +1,4 @@
+package ejercicios;
 public class vehiculo {
     private final String matricula;
     enum Color{BLANCO,ROJO,NEGRO,AMARILLO};

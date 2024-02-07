@@ -1,3 +1,4 @@
+package ejercicios;
 public class moto extends vehiculo{
     private boolean carenada;
 
