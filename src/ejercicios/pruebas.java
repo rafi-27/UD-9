@@ -8,7 +8,10 @@ public class pruebas {
     coche porshe = new coche("TH3940", vehiculo.Color.ROJO, 750);
     vehiculo vehicle = new vehiculo("Si", 15, vehiculo.Color.AMARILLO);
 
+    vehiculo ferrari = new coche("gfbkd3", vehiculo.Color.NEGRO, 345);
+
     ArrayList<vehiculo> listaVehiculos = new ArrayList<>();
+    listaVehiculos.add(ferrari);
     listaVehiculos.add(cocheUno);
     listaVehiculos.add(motouno);
     listaVehiculos.add(porshe);
