@@ -52,5 +52,12 @@ public class planetas extends EjerAstros {
         this.tieneSatelites = tieneSatelites;
     }
 
+    @Override
+    public String toString() {
+        return super.toString()+"planetas [distanciaAlSol=" + distanciaAlSol + ", tiempoDeOrbitaAlSol=" + tiempoDeOrbitaAlSol
+                + ", tieneSatelites=" + tieneSatelites + "]";
+    }
+    
+
     
 }

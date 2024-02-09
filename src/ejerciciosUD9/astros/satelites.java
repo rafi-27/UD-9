@@ -7,6 +7,8 @@ public class satelites {
     //El tiempo que tarda el girar sobre ese planeta:
     private double tiempoDeOrbitaAlPlaneta;
     //La guardamos al planeta al que pertenece
+
+
     
 
 
