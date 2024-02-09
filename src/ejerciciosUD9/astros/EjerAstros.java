@@ -1,4 +1,7 @@
 package ejerciciosUD9.astros;
+
+import java.util.ArrayList;
+
 /**
  * La clase Astros va a ser abstracta.
  */
@@ -65,14 +68,22 @@ public abstract class EjerAstros {
     }
 
     /**
-     * TooString
+     * Metodo mostrar
+     *     //Atributos
+    //• Masa del cuerpo.
+    private double masasDelCuerpo;
+    //• Diámetro medio.
+    private double diametroMedio;
+    //• Período de rotación sobre su propio eje.
+    private double periodoDeRotacion;
+    //• Período de traslación alrededor del cuerpo que orbitan.
+    private double periodoTraslacion;
+    //• Distancia media a ese cuerpo.
+    private double distanciaMediaCuerpo;
      */
-     @Override
-    public String toString() {
-        return "EjerAstros [masasDelCuerpo=" + masasDelCuerpo + ", diametroMedio=" + diametroMedio
-                + ", periodoDeRotacion=" + periodoDeRotacion + ", periodoTraslacion=" + periodoTraslacion
-                + ", distanciaMediaCuerpo=" + distanciaMediaCuerpo;
-    }
+
+    public abstract void muestra(ArrayList<EjerAstros> lista);
+
     /**
      * Hashcode
      */

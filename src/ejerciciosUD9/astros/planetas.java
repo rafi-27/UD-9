@@ -1,5 +1,7 @@
 package ejerciciosUD9.astros;
 
+import java.util.ArrayList;
+
 public class planetas extends EjerAstros {
     //De los planetas tendros los siguentes atributos.
     //Distancia al sol
@@ -53,11 +55,7 @@ public class planetas extends EjerAstros {
     }
 
     @Override
-    public String toString() {
-        return super.toString()+"planetas [distanciaAlSol=" + distanciaAlSol + ", tiempoDeOrbitaAlSol=" + tiempoDeOrbitaAlSol
-                + ", tieneSatelites=" + tieneSatelites + "]";
+    public void muestra(ArrayList<EjerAstros> lista) {
+        lista.toString();
     }
-    
-
-    
 }
