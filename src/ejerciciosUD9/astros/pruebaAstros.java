@@ -11,19 +11,29 @@ public class pruebaAstros {
         ArrayList<EjerAstros> listaDeLosAstros = new ArrayList<>();
 
         //Vamos a crear dos planetas:
-        EjerAstros planetaTierra = new planetas(548, 122354, 63, 89, 145, 178, 24, false);
-        EjerAstros planetaMarte = new planetas(548, 122354, 63, 89, 145, 178, 24, true);
+        planetas planetaTierra = new planetas(548, 122354, 63, 89, 145, 178, 24, true);
+        planetas planetaMarte = new planetas(548, 122354, 63, 89, 145, 178, 24, false);
 
         //Creamos dos satelites:
-        EjerAstros primerSatelite = new satelites(12, 87, 45, 5, 6, 9, 10, planetaMarte);
-        EjerAstros segundoSatelite = new satelites(12, 87, 45, 5, 6, 9, 10, planetaMarte);
+        satelites primerSatelite = new satelites(12, 87, 45, 5, 6, 9, 10,planetaTierra);
+        satelites segundoSatelite = new satelites(12, 87, 45, 5, 6, 9, 10, planetaMarte);
         
+
         listaDeLosAstros.add(planetaMarte);
         listaDeLosAstros.add(planetaTierra);
         listaDeLosAstros.add(primerSatelite);
         listaDeLosAstros.add(segundoSatelite);
-
-        planetaMarte.muestra(listaDeLosAstros);
-        //primerSatelite.muestra(listaDeLosAstros);
+        planetaTierra.sateliteQueTiene(segundoSatelite);
+        planetaMarte.sateliteQueTiene(primerSatelite);
+        for (EjerAstros Astros : listaDeLosAstros) {
+            if (Astros instanceof satelites) {
+                System.out.println("satelite: ");
+                Astros.muestra();
+            }else if (Astros instanceof planetas) {
+                System.out.println("planetas: ");
+                Astros.muestra();
+            }
+            System.out.println("Siguente: ");
+        }
     }
 }

@@ -1,7 +1,5 @@
 package ejerciciosUD9.astros;
 
-import java.util.ArrayList;
-
 public class planetas extends EjerAstros {
     //De los planetas tendros los siguentes atributos.
     //Distancia al sol
@@ -10,7 +8,7 @@ public class planetas extends EjerAstros {
     private double tiempoDeOrbitaAlSol;
     //Si tiene satelites
     private boolean tieneSatelites;
-    
+    private satelites satelite;
     /**
      * Constructor de planetas:
      * @param masasDelCuerpo
@@ -53,9 +51,35 @@ public class planetas extends EjerAstros {
     public void setTieneSatelites(boolean tieneSatelites) {
         this.tieneSatelites = tieneSatelites;
     }
+    /**
+     * Constructor de planetas:
+     * @param masasDelCuerpo
+     * @param diametroMedio
+     * @param periodoDeRotacion
+     * @param periodoTraslacion
+     * @param distanciaMediaCuerpo
+     * @param distanciaAlSol
+     * @param tiempoDeOrbitaAlSol
+     * @param tieneSatelites
+     */
 
+     /**
+      * metodo para agrear a un planeta un satelite:
+      */
+      void sateliteQueTiene(satelites nombreSatelite){
+        if (tieneSatelites) {
+            this.satelite=nombreSatelite;
+        }
+      }
     @Override
-    public void muestra(ArrayList<EjerAstros> lista) {
-        lista.toString();
+    public void muestra() {
+        System.out.println("Masa del cuerpo: "+this.getMasasDelCuerpo());
+        System.out.println("Diametro medio: "+this.getDiametroMedio());
+        System.out.println("Periodo de rotacion: "+this.getPeriodoDeRotacion());
+        System.out.println("Periodo de traslacion: "+this.getPeriodoTraslacion());
+        System.out.println("Distancia media del cuerpo: "+this.getDistanciaMediaCuerpo());
+        System.out.println("Distancia al sol: "+this.distanciaAlSol);
+        System.out.println("Tiempo de orbita al sol: "+this.tiempoDeOrbitaAlSol);
+        System.out.println("Satelite que le pertenece: "+(isTieneSatelites()?this.satelite.toString():"Planeta sin satelite(false)"));
     }
 }

@@ -1,7 +1,5 @@
 package ejerciciosUD9.astros;
 
-import java.util.ArrayList;
-
 public class satelites extends EjerAstros {
     //Atributos que tendra la clase de satelites:
     //La distancia que tiene con respecto al planeta que orbita.
@@ -9,7 +7,7 @@ public class satelites extends EjerAstros {
     //El tiempo que tarda el girar sobre ese planeta:
     private double tiempoDeOrbitaAlPlaneta;
     //La guardamos al planeta al que pertenece
-    private Object objeto;
+    private planetas planeta;
     /**
      * @param masasDelCuerpo
      * @param diametroMedio
@@ -20,11 +18,11 @@ public class satelites extends EjerAstros {
      * @param tiempoDeOrbitaAlPlaneta
      * @param objeto
      */
-    public satelites(double masasDelCuerpo, double diametroMedio, double periodoDeRotacion, double periodoTraslacion, double distanciaMediaCuerpo, double distanciaAlPlaneta, double tiempoDeOrbitaAlPlaneta, Object planetaAlQpertenece) {
+    public satelites(double masasDelCuerpo, double diametroMedio, double periodoDeRotacion, double periodoTraslacion, double distanciaMediaCuerpo, double distanciaAlPlaneta, double tiempoDeOrbitaAlPlaneta, planetas planetaAlQpertenece) {
         super(masasDelCuerpo, diametroMedio, periodoDeRotacion, periodoTraslacion, distanciaMediaCuerpo);
         this.distanciaAlPlaneta = distanciaAlPlaneta;
         this.tiempoDeOrbitaAlPlaneta = tiempoDeOrbitaAlPlaneta;
-        this.objeto = objeto;
+        this.planeta = planetaAlQpertenece;
     }
 
     /**
@@ -47,20 +45,35 @@ public class satelites extends EjerAstros {
         this.tiempoDeOrbitaAlPlaneta = tiempoDeOrbitaAlPlaneta;
     }
 
-    public Object getObjeto() {
-        return objeto;
+    public planetas getplaneta() {
+        return planeta;
     }
 
-    public void setObjeto(Object objeto) {
-        this.objeto = objeto;
+    public void setplaneta(planetas planeta) {
+        this.planeta = planeta;
     }
 
     /**
      * Metodo para visualizar
+     * @param masasDelCuerpo
+     * @param diametroMedio
+     * @param periodoDeRotacion
+     * @param periodoTraslacion
+     * @param distanciaMediaCuerpo
+     * @param distanciaAlPlaneta
+     * @param tiempoDeOrbitaAlPlaneta
+     * @param objeto
      */
     @Override
-    public void muestra(ArrayList<EjerAstros> lista) {
-        lista.toString();
+    public void muestra() {
+        System.out.println("Masa del cuerpo: "+this.getMasasDelCuerpo());
+        System.out.println("Diametro medio: "+this.getDiametroMedio());
+        System.out.println("Periodo de rotacion: "+this.getPeriodoDeRotacion());
+        System.out.println("Periodo de traslacion: "+this.getPeriodoTraslacion());
+        System.out.println("Distancia media del cuerpo: "+this.getDistanciaMediaCuerpo());
+        System.out.println("Distancia al planeta que pertenece: "+this.distanciaAlPlaneta);
+        System.out.println("Tiempo de orbita al planeta: "+this.tiempoDeOrbitaAlPlaneta);
+        System.out.println("Planeta al que pertenece: "+getplaneta().toString());
     }
     
     /**
@@ -75,7 +88,7 @@ public class satelites extends EjerAstros {
         result = prime * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(tiempoDeOrbitaAlPlaneta);
         result = prime * result + (int) (temp ^ (temp >>> 32));
-        result = prime * result + ((objeto == null) ? 0 : objeto.hashCode());
+        result = prime * result + ((planeta == null) ? 0 : planeta.hashCode());
         return result;
     }
 
@@ -92,10 +105,10 @@ public class satelites extends EjerAstros {
             return false;
         if (Double.doubleToLongBits(tiempoDeOrbitaAlPlaneta) != Double.doubleToLongBits(other.tiempoDeOrbitaAlPlaneta))
             return false;
-        if (objeto == null) {
-            if (other.objeto != null)
+        if (planeta == null) {
+            if (planeta != null)
                 return false;
-        } else if (!objeto.equals(other.objeto))
+        } else if (!planeta.equals(other.planeta))
             return false;
         return true;
     }

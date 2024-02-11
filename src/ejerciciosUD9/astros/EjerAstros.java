@@ -1,6 +1,5 @@
 package ejerciciosUD9.astros;
 
-import java.util.ArrayList;
 
 /**
  * La clase Astros va a ser abstracta.
@@ -82,7 +81,7 @@ public abstract class EjerAstros {
     private double distanciaMediaCuerpo;
      */
 
-    public abstract void muestra(ArrayList<EjerAstros> lista);
+    public abstract void muestra();
 
     /**
      * Hashcode
