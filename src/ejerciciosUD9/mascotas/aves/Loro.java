@@ -44,4 +44,34 @@ public class Loro extends Aves{
     public void saluda(){
         System.out.println("Hola Loro");
     }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((origen == null) ? 0 : origen.hashCode());
+        result = prime * result + ((habla == null) ? 0 : habla.hashCode());
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Loro other = (Loro) obj;
+        if (origen == null) {
+            if (other.origen != null)
+                return false;
+        } else if (!origen.equals(other.origen))
+            return false;
+        if (habla == null) {
+            if (other.habla != null)
+                return false;
+        } else if (!habla.equals(other.habla))
+            return false;
+        return true;
+    }
+    
 }

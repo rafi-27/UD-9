@@ -1,7 +1,7 @@
 package ejerciciosUD9.mascotas;
 
 public class Gato extends Mascotas{
-    private enum color{MARRON, BLANCO, NEGRO}
+    public enum color{MARRON, BLANCO, NEGRO}
     private boolean peloLargo;
     private color queColor;
     /**
@@ -47,5 +47,32 @@ public class Gato extends Mascotas{
 
     public void habla(){
         System.out.println("Maullido");
-    } 
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + (peloLargo ? 1231 : 1237);
+        result = prime * result + ((queColor == null) ? 0 : queColor.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Gato other = (Gato) obj;
+        if (peloLargo != other.peloLargo)
+            return false;
+        if (queColor != other.queColor)
+            return false;
+        return true;
+    }
+
+    
 }

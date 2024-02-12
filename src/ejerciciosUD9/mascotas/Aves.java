@@ -47,6 +47,34 @@ public abstract class Aves extends Mascotas{
 
     public abstract void muestra();
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((pico == null) ? 0 : pico.hashCode());
+        result = prime * result + (vuela ? 1231 : 1237);
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Aves other = (Aves) obj;
+        if (pico == null) {
+            if (other.pico != null)
+                return false;
+        } else if (!pico.equals(other.pico))
+            return false;
+        if (vuela != other.vuela)
+            return false;
+        return true;
+    }
+
 
 
     

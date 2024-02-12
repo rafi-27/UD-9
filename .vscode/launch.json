@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pruebaBanco",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.banco.pruebaBanco",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
+            "name": "archivito",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.mascotas.archivito",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
+            "name": "Inventario",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.mascotas.Inventario",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
             "name": "pruebaAstros",
             "request": "launch",
             "mainClass": "ejerciciosUD9.astros.pruebaAstros",

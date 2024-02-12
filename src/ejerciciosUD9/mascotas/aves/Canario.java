@@ -3,7 +3,7 @@ package ejerciciosUD9.mascotas.aves;
 import ejerciciosUD9.mascotas.Aves;
 
 public class Canario extends Aves{
-    private enum colores{ROJO,VERDE,AMARILLO,ROSA}
+    public enum colores{ROJO,VERDE,AMARILLO,ROSA}
     private colores colorElejido;
     private boolean canta;
     /**
@@ -65,6 +65,31 @@ public class Canario extends Aves{
 
     public void habla(){
         System.out.println("El loro canta");
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((colorElejido == null) ? 0 : colorElejido.hashCode());
+        result = prime * result + (canta ? 1231 : 1237);
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Canario other = (Canario) obj;
+        if (colorElejido != other.colorElejido)
+            return false;
+        if (canta != other.canta)
+            return false;
+        return true;
     }    
 
 
