@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pruebaAstros",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.astros.pruebaAstros",
+            "projectName": "UD-9_2e7576a0"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

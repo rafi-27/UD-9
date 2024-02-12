@@ -25,6 +25,9 @@ public class planetas extends EjerAstros {
         this.distanciaAlSol = distanciaAlSol;
         this.tiempoDeOrbitaAlSol = tiempoDeOrbitaAlSol;
         this.tieneSatelites = tieneSatelites;
+        // if (tieneSatelites) {
+        //     sateliteQueTiene(new satelites(masasDelCuerpo, diametroMedio, periodoDeRotacion, periodoTraslacion, distanciaMediaCuerpo, distanciaAlSol, tiempoDeOrbitaAlSol, null));
+        // }
     }
 
     //Getters y setters
@@ -67,7 +70,9 @@ public class planetas extends EjerAstros {
       * metodo para agrear a un planeta un satelite:
       */
       void sateliteQueTiene(satelites nombreSatelite){
-        if (tieneSatelites) {
+        if (!this.tieneSatelites) {
+            System.err.println("No puedes");
+        }else{
             this.satelite=nombreSatelite;
         }
       }
