@@ -91,7 +91,7 @@ public class empleados {
         System.out.println("Direccion: "+this.direccion);
     }
      
-    void calcularSueldoNeto(){
+    double calcularSueldoNeto(){
         double sueldoNeto;
         if (getSueldoBrutoMensual()>0 && getSueldoBrutoMensual()*12 <= 12000) {
             //IRPF del 20%
@@ -103,7 +103,7 @@ public class empleados {
             //IRPF del 40%
             sueldoNeto=getSueldoBrutoMensual()-((getSueldoBrutoMensual()*0.40));
         }
-        System.out.println("Sueldo neto: "+sueldoNeto);
+        return sueldoNeto;
     }
 
 

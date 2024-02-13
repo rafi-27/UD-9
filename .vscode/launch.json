@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "programaEm",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.empresaYempleados.programaEm",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
             "name": "Inventario",
             "request": "launch",
             "mainClass": "ejerciciosUD9.mascotas.Inventario",
