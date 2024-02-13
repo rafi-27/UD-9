@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Inventario",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.mascotas.Inventario",
+            "projectName": "UD-9_2e7576a0"
+        },
+        {
+            "type": "java",
             "name": "pruebaBanco",
             "request": "launch",
             "mainClass": "ejerciciosUD9.banco.pruebaBanco",
