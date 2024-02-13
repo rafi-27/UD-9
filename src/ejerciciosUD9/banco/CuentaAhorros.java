@@ -1,7 +1,7 @@
 package ejerciciosUD9.banco;
 
 public class CuentaAhorros extends CuentaBancaria {
-    private final double saldoMinimo = 500;
+    private static final double saldoMinimo = 500;
 
     /**
      * La segunda tendrá una constante de clase llamada saldoMinimo. Si no se llega
