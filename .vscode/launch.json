@@ -9,6 +9,13 @@
             "name": "Programafiguras",
             "request": "launch",
             "mainClass": "ejerciciosUD9.figuras.Programafiguras",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
+            "name": "Programafiguras",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.figuras.Programafiguras",
             "projectName": "UD-9_2e7576a0"
         },
         {
