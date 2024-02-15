@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "programamonopoly",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.monopoli.programamonopoly",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
             "name": "Programafiguras",
             "request": "launch",
             "mainClass": "ejerciciosUD9.figuras.Programafiguras",

@@ -8,16 +8,11 @@ public class tablero {
      * Se crea un tablera agregado sus objetos a nuestra lista:
      */
     public tablero(){
-        terreno primerTerreno = new terreno("primerTerrenoVerde", 1500000, 200000, 8500, terreno.ColorTerreno.VERDE);
-        terreno segundoTerreno = new terreno("segundoTerrenoVerde", 300000, 250000, 10500, terreno.ColorTerreno.VERDE);
-        estaciones primeraEstacion = new estaciones("Norte");
-        terreno tercerTerreno = new terreno("tercerTerrenoRojo", 1400000, 300000, 5500, terreno.ColorTerreno.ROJO);
-        estaciones segundaEstacion = new estaciones("Sur");
-        listaCasillasTodoTipos.add(primerTerreno);
-        listaCasillasTodoTipos.add(segundoTerreno);
-        listaCasillasTodoTipos.add(primeraEstacion);
-        listaCasillasTodoTipos.add(tercerTerreno);
-        listaCasillasTodoTipos.add(segundaEstacion);
+        listaCasillasTodoTipos.add(new terreno("primerTerrenoVerde", 1500000, 200000, 8500, terreno.ColorTerreno.VERDE));
+        listaCasillasTodoTipos.add(new terreno("segundoTerrenoVerde", 300000, 250000, 10500, terreno.ColorTerreno.VERDE));
+        listaCasillasTodoTipos.add(new estaciones("Norte"));
+        listaCasillasTodoTipos.add(new terreno("tercerTerrenoRojo", 1400000, 300000, 5500, terreno.ColorTerreno.ROJO));
+        listaCasillasTodoTipos.add(new estaciones("Sur"));
     }
 
     //Mostrar el tablero:
