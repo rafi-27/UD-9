@@ -3,7 +3,7 @@ package ejerciciosUD9.figuras;
 public class Circulo implements IFigura2D{
     //Tiene radio
     private double radio;
-
+    //Editando desde github:
     //Constructor:
     public Circulo(double radio) {
         this.radio = radio;
