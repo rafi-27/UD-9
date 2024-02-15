@@ -1,5 +1,4 @@
 package ejerciciosUD9.monopoli;
-
 import java.util.ArrayList;
 
 public class tablero {
@@ -24,8 +23,30 @@ public class tablero {
     //Mostrar el tablero:
     void mostrarTablero(){
         for (casilla casilla : listaCasillasTodoTipos) {
-            System.out.println(casilla);
+            if (casilla instanceof casilla) {
+                System.out.println(casilla.getNombreCasilla()+" "+casilla.getCodigo());    
+            }else if (casilla instanceof estaciones) {
+                estaciones temporal = (estaciones)casilla;
+                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio());
+            }else if (casilla instanceof terreno) {
+                terreno temporal = (terreno)casilla;
+                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio()+" "+temporal.getColorElejido());
+            }else if (casilla instanceof propiedad) {
+                propiedad temporal = (propiedad)casilla;
+                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio()+" "+temporal.getCodigo());
+            }
         }
     }
 
+    //Funcion para seleccionar los terrenos de un jugador en concreto:
+    ArrayList<terreno> listaTerrenos(int jugador){
+        ArrayList<terreno>listaAdevolver = new ArrayList<>();
+        for (casilla casilla : listaCasillasTodoTipos) {
+            if (casilla instanceof terreno) {
+                terreno tempo = (terreno) casilla;
+                listaAdevolver.add(tempo);
+            }
+        }
+        return listaAdevolver;
+    }
 }
