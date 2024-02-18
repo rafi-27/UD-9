@@ -1,5 +1,4 @@
-package maraton;
-
+package maraton.nuevePuntoTres;
 public class figuraMaraton {
     public static void main(String[] args) {
         Triangulo uno = new Triangulo(5, 2.5, "Equilatero");

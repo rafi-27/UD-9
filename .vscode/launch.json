@@ -8,6 +8,13 @@
             "type": "java",
             "name": "figuraMaraton",
             "request": "launch",
+            "mainClass": "figuraMaraton",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
+            "name": "figuraMaraton",
+            "request": "launch",
             "mainClass": "maraton.figuraMaraton",
             "projectName": "UD-9_c3d7c09b"
         },

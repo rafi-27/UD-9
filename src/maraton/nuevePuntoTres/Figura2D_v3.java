@@ -1,5 +1,4 @@
-package maraton;
-
+package maraton.nuevePuntoTres;
 public class Figura2D_v3 {
     //atributos:
     private double ancho;

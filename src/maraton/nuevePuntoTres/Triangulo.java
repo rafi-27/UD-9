@@ -1,5 +1,4 @@
-package maraton;
-
+package maraton.nuevePuntoTres;
 public class Triangulo extends Figura2D_v3 {
     private String estilo;
     // private enum estilos{ISOSCELES, RECTANGULO, EQUILATERO};
