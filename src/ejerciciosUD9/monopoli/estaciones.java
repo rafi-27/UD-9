@@ -1,7 +1,7 @@
 package ejerciciosUD9.monopoli;
 
 public class estaciones extends propiedad{
-    private static int VALOR_ESTACION=200;
+    private static int VALOR_ESTACION=20000;
     /**
      * Clase Estacion (hija de Propiedad):
      * Constante: VALOR_ESTACION (int)
@@ -15,7 +15,7 @@ public class estaciones extends propiedad{
         if (modificacion<=0) {
             return 0;
         }else{
-            return getPrecio()/modificacion;
+            return this.precio/modificacion;
         }
     }
 }

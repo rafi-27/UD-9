@@ -1,17 +1,25 @@
 package maraton.nuevePuntoNueve;
 
+import java.util.ArrayList;
+
 public class MovilPMain {
     public static void main(String[] args) {
-        MovilPrepagoClass telefonoVodafone = new MovilPrepagoClass(63245875,0.50f,0.25f,0.02f,10);
-        System.out.println(telefonoVodafone.consultarSaldo());
+        MovilPrepagoClass telef1 = new MovilPrepagoClass(54587645, 0.05f, 0.02f, 0.25f, 5);
+        MovilPlus telef2 = new MovilPlus(777777777, 0.05f, 0.02f, 0.25f, 10);
+        MovilTarifaPlana telef3 = new MovilTarifaPlana(6364621, 0.05f, 0.02f, 50);
 
-        telefonoVodafone.efectuarLlamada(70);
-        System.out.println(telefonoVodafone.consultarSaldo());
+        ArrayList<MovilPrepagoClass>listaTelefonos = new ArrayList<>();
 
-        //telefonoVodafone.navegar(250);
-        //System.out.println(telefonoVodafone.consultarSaldo());
+        listaTelefonos.add(telef1);
+        listaTelefonos.add(telef2);
+        listaTelefonos.add(telef3);
 
-        //telefonoVodafone.recargar(10);
-        //System.out.println(telefonoVodafone.consultarSaldo());
+        System.out.println(telef1.toString());
+        telef2.consultarDatosTelefono();
+        telef3.consultarDatosTelefono();
+
+        // for (MovilPrepagoClass movilPrepago : listaTelefonos) {
+        //     System.out.println(movilPrepago);
+        // }
     }
 }

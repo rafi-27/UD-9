@@ -46,6 +46,6 @@ public class MovilPlus extends MovilPrepagoClass implements PrePagable{
     @Override
     public void consultarDatosTelefono() {
         System.out.println("Numero: "+this.numeroMovil);
-        System.out.println("Con saldo de: "+((this.saldo>0)?this.saldo+"€":"No queda saldo."));
+        System.out.println("Con saldo de: "+((this.saldo>0)?this.saldo:"No queda saldo."));
     }
 }

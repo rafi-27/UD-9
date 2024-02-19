@@ -21,9 +21,8 @@ public class MovilPrepagoClass {
         this.costeConsumoMB=costconsumMB;
         this.saldo=cash;
     }
-
+    
     //Getters
-
     public int getNumeroMovil() {
         return numeroMovil;
     }

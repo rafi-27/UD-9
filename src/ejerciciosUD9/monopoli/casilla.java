@@ -3,7 +3,7 @@ package ejerciciosUD9.monopoli;
 public class casilla {
     private final String nombreCasilla;
     private final int codigo;
-    private int contador=1;
+    private static int contador=1;
     
     /**
      * Construimos el constructor y que aumente cada vez que se crea una casilla:

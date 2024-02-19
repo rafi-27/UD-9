@@ -18,18 +18,7 @@ public class tablero {
     //Mostrar el tablero:
     void mostrarTablero(){
         for (casilla casilla : listaCasillasTodoTipos) {
-            if (casilla instanceof casilla) {
-                System.out.println(casilla.getNombreCasilla()+" "+casilla.getCodigo());    
-            }else if (casilla instanceof estaciones) {
-                estaciones temporal = (estaciones)casilla;
-                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio());
-            }else if (casilla instanceof terreno) {
-                terreno temporal = (terreno)casilla;
-                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio()+" "+temporal.getColorElejido());
-            }else if (casilla instanceof propiedad) {
-                propiedad temporal = (propiedad)casilla;
-                System.out.println(temporal.getNombreCasilla()+" "+temporal.getPropietario()+" "+temporal.getPrecio()+" "+temporal.getCodigo());
-            }
+            System.out.println(casilla.toString());
         }
     }
 
