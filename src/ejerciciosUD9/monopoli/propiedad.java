@@ -27,4 +27,9 @@ public abstract class propiedad extends casilla{
     }
     //Metodo abstracto getAlquiler:
     protected abstract double getAlquiler(int modificacion);
+    @Override
+    public String toString() {
+        return super.toString()+" propiedad [precio=" + precio + ", hipoteca=" + hipoteca + ", propietario=" + propietario + "]";
+    }
+    
 }

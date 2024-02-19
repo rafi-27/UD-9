@@ -18,4 +18,6 @@ public class estaciones extends propiedad{
             return this.precio/modificacion;
         }
     }
+
+    
 }

@@ -47,4 +47,11 @@ public class terreno extends propiedad{
             return getPrecioAlquiler()*modificacion;
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+" terreno [precioAlquiler=" + precioAlquiler + ", colorElejido=" + colorElejido + "]";
+    }
+
+    
 }

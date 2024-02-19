@@ -23,4 +23,11 @@ public class casilla {
     public int getCodigo() {
         return codigo;
     }
+
+    @Override
+    public String toString() {
+        return "casilla [nombreCasilla=" + nombreCasilla + ", codigo=" + codigo + "]";
+    }
+
+    
 }
