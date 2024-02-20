@@ -13,6 +13,13 @@ public class Figura2D_v3 {
         this.ancho = ancho;
         this.alto = alto;
     }
+    /**
+     * Ultimo Constructor:
+     */
+    public Figura2D_v3(double iguales){
+        this.alto=iguales;
+        this.ancho=iguales;
+    }
 
     /**
      * Metodos que devolveran los datos del objeto y tambien poder modificarlo:

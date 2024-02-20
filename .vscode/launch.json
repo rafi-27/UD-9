@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProgramaAgenda",
+            "request": "launch",
+            "mainClass": "ejerciciosUD9.agenda.ProgramaAgenda",
+            "projectName": "UD-9_2e7576a0"
+        },
+        {
+            "type": "java",
+            "name": "figuraMaraton",
+            "request": "launch",
+            "mainClass": "maraton.nuevePuntoTres.figuraMaraton",
+            "projectName": "UD-9_2e7576a0"
+        },
+        {
+            "type": "java",
             "name": "programamonopoly",
             "request": "launch",
             "mainClass": "ejerciciosUD9.monopoli.programamonopoly",
