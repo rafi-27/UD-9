@@ -39,9 +39,7 @@ public abstract class pieza {
      * recibe como parámetro una Pieza, y copiará sus atributos a la nueva Pieza,
      */
     public pieza(pieza piezaTercerConst){
-        this.posicion=piezaTercerConst.posicion;
-        this.colorpieza=piezaTercerConst.colorpieza;
-        this.comida=piezaTercerConst.comida;
+        this(piezaTercerConst.posicion.x, piezaTercerConst.posicion.y, piezaTercerConst.colorpieza);
     }
 
      //Getters y setters
