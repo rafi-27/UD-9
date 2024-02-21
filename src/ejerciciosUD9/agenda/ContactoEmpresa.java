@@ -24,6 +24,4 @@ public class ContactoEmpresa extends Contacto{
     public String toString() {
         return super.toString()+" pagina Web=" + paginaWeb;
     }
-
-    
 }

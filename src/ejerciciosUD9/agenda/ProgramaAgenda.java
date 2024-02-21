@@ -6,6 +6,7 @@ public class ProgramaAgenda {
         //Creamos la agenda:
         Agenda primeraAgenda = new Agenda();
         //Creamos los contactos:
+        primeraAgenda.añadirContacto(new ContactoPersona("Joselito", "25934865885"));
         ContactoEmpresa yoigo = new ContactoEmpresa("Yoigo", "698254187", "www.yoigo.com");
         ContactoEmpresa movistar = new ContactoEmpresa("Movistar", "587412365", "www.ies.thiar");
 
