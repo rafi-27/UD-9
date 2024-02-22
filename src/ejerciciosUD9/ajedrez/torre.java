@@ -9,16 +9,16 @@ public class torre extends pieza{
         super(x, y, colorPieza);
     }
 
-    /**
-     * Metodo de mover que cambiaria la x y la y si la coordenada que se le pasa
-     * es correcta.
-     */
+
+
     @Override
     void mover(int x, int y) {
-        if (comprobarPosicion(x)&&comprobarPosicion(y)) {
-            if (this.getPosicion().x==x || this.getPosicion().y==y) {
-                setPosicion(new Point(x, y));
-            }
-        }
+
     }
+  
+
+
+
+
+
 }
