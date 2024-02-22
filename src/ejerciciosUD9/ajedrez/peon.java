@@ -15,6 +15,6 @@ public class peon extends pieza{
     */
     @Override
     void mover(int x, int y) {
-        setPosicion(new Point(getPosicion().x+1, getPosicion().y+1));
+        
     }
 }
