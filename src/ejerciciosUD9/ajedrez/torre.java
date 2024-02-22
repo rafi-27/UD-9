@@ -1,5 +1,5 @@
 package ejerciciosUD9.ajedrez;
-
+import java.awt.Point;
 
 public class torre extends pieza{
     /**
@@ -8,17 +8,17 @@ public class torre extends pieza{
     public torre(int x, int y,ColorPieza colorPieza){
         super(x, y, colorPieza);
     }
-
-
-
+    /**
+     * Mover de posicion a la torre:
+     * Solo movemos la torre mientras una de sus coordenadas sea igual porque 
+     * solo podemos movernos hacia arriba o abajo.
+     */
     @Override
     void mover(int x, int y) {
-
+        if (comprobarPosicion(x)&&comprobarPosicion(y)) {
+            if (this.getPosicion().x==x||this.getPosicion().y==y) {
+                setPosicion(new Point(x, y));
+            }
+        }
     }
-  
-
-
-
-
-
 }
