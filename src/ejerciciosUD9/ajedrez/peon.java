@@ -2,7 +2,7 @@ package ejerciciosUD9.ajedrez;
 
 import java.awt.Point;
 
-public class peon extends pieza {
+public class peon extends pieza implements JuegoTablero{
     /**
      * Constructor similar al de la clase torre:
      */
@@ -32,5 +32,44 @@ public class peon extends pieza {
                 setPosicion(new Point(this.getPosicion().x-1, y));
             }
         }
+    }
+
+        /**
+     * Procedemos a implementarle los interfaces:
+     */
+
+    // devolverá la letra correspondiente del tablero de ajedrez.
+    @Override
+    public char indiceAPosicion(int indice) {
+        String letraTablero = "ABCDEFGH";
+        return letraTablero.charAt(indice);
+    }
+
+    // devolverá su posición numérica
+    @Override
+    public int indiceAPosicionN(int indice) {
+        if (indice >= 0 && indice < 7) {
+            return indice + 1;
+        }
+        return -1;
+    }
+
+    // Devolvera posicion numerica de la letra.
+    @Override
+    public int posicionAIndice(char posicion) {
+        String letraTablero = "ABCDEFGH";
+        if (letraTablero.contains(String.valueOf(posicion))) {
+            return (letraTablero.indexOf(posicion) + 1);
+        }
+        return -1;
+    }
+
+    // devolverá su correspondiente índice numérico.
+    @Override
+    public int posicionAIndice(int posicion) {
+        if (posicion >= 0 && posicion <= 8) {
+            return posicion-1;
+        }
+        return -1;
     }
 }
