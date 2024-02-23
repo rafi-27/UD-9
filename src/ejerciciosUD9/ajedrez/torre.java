@@ -36,7 +36,7 @@ public class torre extends pieza implements JuegoTablero {
     // devolverá su posición numérica
     @Override
     public int indiceAPosicionN(int indice) {
-        if (indice >= 0 && indice < 7) {
+        if (indice >= 0 && indice <= 7) {
             return indice + 1;
         }
         return -1;
@@ -55,7 +55,7 @@ public class torre extends pieza implements JuegoTablero {
     // devolverá su correspondiente índice numérico.
     @Override
     public int posicionAIndice(int posicion) {
-        if (posicion >= 0 && posicion <= 8) {
+        if (posicion >= 1 && posicion <= 8) {
             return posicion-1;
         }
         return -1;

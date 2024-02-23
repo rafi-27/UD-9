@@ -15,28 +15,28 @@ public class peon extends pieza implements JuegoTablero{
      */
     @Override
     void mover(int x, int y) {
-        if (this.getColorpieza() == ColorPieza.BLANCO) {
+        if (this.getColorpieza() == ColorPieza.NEGRO) {
             if (this.getPosicion().x == 1 && this.getPosicion().y == y) {
-                if (x == 1 || x == 2) {
-                    setPosicion(new Point(this.getPosicion().x + x, y));
+                if (y == 1 || y == 2) {
+                    this.posicion.setLocation(x, y);
                 }
-            } else if (this.getPosicion().y == y) {
-                setPosicion(new Point(this.getPosicion().x + 1, y));
+            } else if (this.getPosicion().x-x == 1) {
+                this.posicion.setLocation(x+1, y);
             }
         }else{
-            if (this.getPosicion().x == 8 && this.getPosicion().y == y) {
-                if (x == 1 || x == 2) {
-                    setPosicion(new Point(this.getPosicion().x - x, y));
+            if (this.getPosicion().x == 7 && this.getPosicion().y == y) {
+                if (y == 1 || y == 2) {
+                    this.posicion.setLocation(x-1, y);
                 }
-            }else if (this.getPosicion().y == y) {
-                setPosicion(new Point(this.getPosicion().x-1, y));
+            }else if (this.getPosicion().x-x == 1) {
+                this.posicion.setLocation(x-1, y);
             }
         }
     }
 
-        /**
-     * Procedemos a implementarle los interfaces:
-     */
+    /**
+    * Procedemos a implementarle los interfaces:
+    */
 
     // devolverá la letra correspondiente del tablero de ajedrez.
     @Override
@@ -48,7 +48,7 @@ public class peon extends pieza implements JuegoTablero{
     // devolverá su posición numérica
     @Override
     public int indiceAPosicionN(int indice) {
-        if (indice >= 0 && indice < 7) {
+        if (indice >= 0 && indice <= 7) {
             return indice + 1;
         }
         return -1;
@@ -67,7 +67,7 @@ public class peon extends pieza implements JuegoTablero{
     // devolverá su correspondiente índice numérico.
     @Override
     public int posicionAIndice(int posicion) {
-        if (posicion >= 0 && posicion <= 8) {
+        if (posicion >= 1 && posicion <= 8) {
             return posicion-1;
         }
         return -1;

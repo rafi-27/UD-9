@@ -3,7 +3,7 @@ import java.awt.Point;
 public abstract class pieza {
     //Creamos los atributos e importamos java.awt.Point para poder usar la clase point:
     public enum ColorPieza{BLANCO,NEGRO};
-    private Point posicion = new Point();
+    protected Point posicion = new Point();
     private ColorPieza colorpieza;
     private boolean comida;
     /**
