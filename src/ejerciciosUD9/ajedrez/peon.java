@@ -1,7 +1,4 @@
 package ejerciciosUD9.ajedrez;
-
-import java.awt.Point;
-
 public class peon extends pieza implements JuegoTablero{
     /**
      * Constructor similar al de la clase torre:
