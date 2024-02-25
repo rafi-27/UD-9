@@ -1,6 +1,5 @@
 package ejerciciosUD9.ajedrez;
 
-import java.awt.Point;
 
 public class torre extends pieza implements JuegoTablero {
     /**
@@ -17,7 +16,7 @@ public class torre extends pieza implements JuegoTablero {
     void mover(int x, int y) {
         if (comprobarPosicion(x) && comprobarPosicion(y)) {
             if (this.getPosicion().x == x || this.getPosicion().y == y) {
-                setPosicion(new Point(x, y));
+                this.posicion.setLocation(x, y);
             }
         }
     }

@@ -117,5 +117,4 @@ public abstract class pieza {
      * Crear el métodos públicos y abstracto:
      */
     abstract void mover(int x,int y);
-    
 }
