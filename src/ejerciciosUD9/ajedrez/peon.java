@@ -14,7 +14,7 @@ public class peon extends pieza implements JuegoTablero{
     void mover(int x, int y) {
         if (this.getColorpieza() == ColorPieza.NEGRO) {
             if (this.getPosicion().x == 1 && this.getPosicion().y == y) {
-                if (y == 1 || y == 2) {
+                if (x == 1 || x == 2) {
                     this.posicion.setLocation(x, y);
                 }
             } else if (this.getPosicion().x-x == 1) {
@@ -22,7 +22,7 @@ public class peon extends pieza implements JuegoTablero{
             }
         }else{
             if (this.getPosicion().x == 7 && this.getPosicion().y == y) {
-                if (y == 1 || y == 2) {
+                if (x == 1 || x == 2) {
                     this.posicion.setLocation(x-1, y);
                 }
             }else if (this.getPosicion().x-x == 1) {
