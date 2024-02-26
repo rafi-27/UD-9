@@ -19,7 +19,7 @@ public class CuentaAhorros extends CuentaBancaria {
     @Override
     public void calcularIntereses() {
         double interesAsumar;
-        if (this.saldoMinimo < getSaldo()) {
+        if (saldoMinimo < getSaldo()) {
             interesAsumar = (getSaldo()*interesAnualBasico*0.5);
         }else{
             interesAsumar = (getSaldo()*interesAnualBasico*2);

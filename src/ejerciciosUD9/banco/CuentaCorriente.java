@@ -17,6 +17,5 @@ public class CuentaCorriente extends CuentaBancaria{
     @Override
     public void mostrarDatos() {
         System.out.println("Cuenta corriente: "+this.getNumeroCuenta()+" saldo: "+this.getSaldo());
-    }
-    
+    }   
 }

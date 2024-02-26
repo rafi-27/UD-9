@@ -1,5 +1,4 @@
 package ejerciciosUD9.banco;
-
 public abstract class CuentaBancaria {
     private String numeroCuenta;
     private double saldo;
