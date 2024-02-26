@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "parking",
+            "request": "launch",
+            "mainClass": "ejercicioParking.parking",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
+            "name": "man",
+            "request": "launch",
+            "mainClass": "ejercicioPrueba.man",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
             "name": "ProgramaAgenda",
             "request": "launch",
             "mainClass": "ejerciciosUD9.agenda.ProgramaAgenda",
