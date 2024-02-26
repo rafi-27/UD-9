@@ -22,8 +22,8 @@ public class torre extends pieza implements JuegoTablero {
     }
 
     /**
-     * Procedemos a implementarle los interfaces:
-     */
+    * Procedemos a implementarle los interfaces:
+    */
 
     // devolverá la letra correspondiente del tablero de ajedrez.
     @Override
