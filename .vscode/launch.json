@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "primerEjer",
+            "request": "launch",
+            "mainClass": "EjerTemp.primerEjer",
+            "projectName": "UD-9_c3d7c09b"
+        },
+        {
+            "type": "java",
             "name": "Alumnos",
             "request": "launch",
             "mainClass": "entornos.Alumnos",
